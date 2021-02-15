@@ -2,6 +2,9 @@ package mx.edu.itons.calculadoraimc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
 
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +13,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val estatura : EditText = findViewById(R.id.idEestatura) as EditText
+        val peso : EditText = findViewById(R.id.idAltura) as EditText
+
+        val btnOp: Button = findViewById(R.id.btnOperacion) as Button
+
+        //btnOp.setOnClickListener(View.OnClickListener { calcularIMC(estatura,peso) })
+
+
+
 
 
     }
@@ -29,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         } else if (imc > 30) {
 
 
-           
+
 
 
         }
@@ -38,3 +50,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
